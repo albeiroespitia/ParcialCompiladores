@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  	<link href="vis-master/dist/vis-network.min.css" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Document</title>
+</head>
+<body>
+	<header>
+		<h1>Automata</h1>
+	</header>
+	<section class="expression">
+		<span>INGRESE EL CODIGO A VALIDAR</span>
+		<textarea id="expressionArea" cols="30" rows="5"></textarea>
+		<button id="acceptButton">Hecho</button>
+	</section>
+
+	<section class="result"></section>
+	
+	<h3>Puede mover los nodos, hacer zoom, reacomodar, etc</h3>
+	<div id="mynetwork"></div>
+
+	 <script type="text/javascript" src="vis-master/dist/vis.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src='./js/logic.js'></script>
+	<script src='./js/nodes.js'></script>
+</body>
+</html>
