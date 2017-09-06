@@ -257,7 +257,7 @@ $(document).ready(function(){
 	$('#acceptButton').click(function(){
 		$('.result').html('');
 		let data = $('#expressionArea').val();
-		data = data.split(' ');
+		data = data.match(/[^\s]+/g)
 		let obj,result;
 		for (let i = 0; i < data.length; i++) {
 			obj = new Automata(data[i]);
